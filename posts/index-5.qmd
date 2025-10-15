@@ -1,0 +1,51 @@
+---
+title: "Community Perceptions of Rainwater Harvesting in Areas Surrounding Mzuzu City, Malawi"
+author: "Admin"
+format: html
+---
+## Background
+
+Rainwater harvesting (RWH) is increasingly recognised as an important strategy for improving household water security. Understanding how communities perceive RWH can help in promoting its adoption and ensuring the sustainability of such initiatives.
+
+## Objective
+
+This study explored perceptions of rainwater harvesting among households located in three peri-urban areas surrounding Mzuzu City, Malawi. The main objective was to assess community attitudes towards RWH and identify demographic factors associated with positive or negative perceptions.
+
+## Methodology
+
+A cross-sectional survey was conducted among 120 respondents selected through systematic random sampling. The questionnaire captured data on household demographics (age, gender, education, income) and perception scores regarding rainwater harvesting, measured using a 5-point Likert scale (1 = strongly disagree to 5 = strongly agree).
+
+## Analysis
+
+Perception scores were dichotomised into positive and negative categories. Associations between demographic characteristics and perceptions were tested using chi-square analysis.
+
+A logistic regression model was then used to estimate adjusted odds ratios (AORs) and 95% confidence intervals (CIs) for factors associated with positive perceptions of RWH.
+
+The results are presented in Table 1.
+
+Table 1. Association between demographic factors and positive perception of rainwater harvesting among peri-urban households around Mzuzu City (n = 120)
+
+| Variable                   | Category        | % Positive Perception | AOR (95% CI)            | p-value   |
+| -------------------------- | --------------- | --------------------- | ----------------------- | --------- |
+| **Gender**                 | Male (Ref)      | 52.1                  | 1.00                    | —         |
+|                            | Female          | 63.7                  | 1.54 (0.78 – 3.02)      | 0.22      |
+| **Education Level**        | Primary (Ref)   | 41.3                  | 1.00                    | —         |
+|                            | Secondary       | 59.8                  | **2.46 (1.05 – 5.73)**  | **0.037** |
+|                            | Tertiary        | 72.5                  | **3.88 (1.41 – 10.65)** | **0.008** |
+| **Household Income (MWK)** | <100,000 (Ref)  | 45.0                  | 1.00                    | —         |
+|                            | 100,000–300,000 | 60.4                  | **1.91 (1.02 – 3.58)**  | **0.042** |
+|                            | >300,000        | 68.7                  | **2.44 (1.08 – 5.52)**  | **0.032** |
+| **Age Group (years)**      | <35 (Ref)       | 58.6                  | 1.00                    | —         |
+|                            | ≥35             | 54.3                  | 0.83 (0.45 – 1.51)      | 0.53      |
+
+## Interpretation
+
+Respondents with secondary and tertiary education were significantly more likely to have positive perceptions of rainwater harvesting compared to those with primary education (p < 0.05).
+Similarly, households with higher monthly income (>MWK 100,000) showed greater likelihood of supporting RWH initiatives.
+Gender and age were not significantly associated with perceptions.
+
+These findings suggest that educational exposure and economic capacity play key roles in shaping positive attitudes toward rainwater harvesting practices in peri-urban Mzuzu.
+
+## Conclusion
+
+The study found that better-educated and higher-income households were more receptive to adopting rainwater harvesting systems. Future awareness campaigns should target less-educated and lower-income groups, focusing on the affordability and long-term benefits of household water collection.

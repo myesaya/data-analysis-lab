@@ -1,0 +1,216 @@
+---
+title: "Impact of a Behaviour Change Communication Intervention on Cybersecurity Awareness"
+author: "Admin"
+format: html
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+## Introduction
+
+Cybersecurity awareness remains a growing concern as more people rely on
+digital tools for financial transactions, communication, and information
+access. Many users lack knowledge on identifying phishing attempts,
+creating strong passwords, and verifying the authenticity of online
+content. Behaviour Change Communication (BCC) interventions that combine
+mass media and social engagement can play a key role in addressing these
+gaps.
+
+This report presents the results of a BCC intervention that used radio
+programmes and online engagement to promote safe cybersecurity
+practices. The objectives were to:
+
+1.  Assess the level of audience engagement through radio and social
+    media interactions.
+
+2.  Measure the change in cybersecurity knowledge following exposure to
+    the intervention using a differences-in-differences approach.
+
+## Description of the Intervention
+
+The intervention ran for three months and targeted adult listeners in
+selected districts. Weekly 30-minute radio call-in programmes were
+broadcast, focusing on topics such as detecting phishing links, setting
+secure passwords, updating software, and avoiding scams.
+
+Each episode encouraged listeners to ask questions by calling during
+live sessions or sending messages through Facebook, SMS, or WhatsApp.
+The radio programme was supported by:
+
+-   Short radio spots that repeated key messages throughout the week.
+
+-   Facebook posts summarising each episode.
+
+-   SMS and WhatsApp tips sent to subscribers after every broadcast.
+
+A call log system captured all engagements across platforms to
+understand audience participation and the main cybersecurity issues
+raised.
+
+## Engagement Tracking
+
+During the campaign, all incoming calls and messages were recorded. The
+records captured the channel, time, and key phrases mentioned. Table 1
+presents a sample of entries from the call log.
+
+Table 1: Sample of Call Log Data
+
+| ID | Channel | Timestamp | Text Message | Keywords |
+|-----------|-----------|-----------|---------------------------|-----------|
+| 1 | Radio | 2025-09-01 09:15:00 | How do I know if a link is safe? | link, safe, phishing |
+| 2 | Radio | 2025-09-01 09:18:30 | My bank asked for a PIN by SMS. | bank, sms, phishing |
+| 3 | WhatsApp | 2025-09-01 10:05:12 | How can I enable two-factor authentication? | twofactor, password |
+| 4 | Facebook | 2025-09-01 11:02:00 | Is antivirus protection enough? | antivirus, malware |
+| 5 | SMS | 2025-09-01 12:00:00 | I received a link promising free airtime. Safe? | free, link, scam |
+
+A total of 1,280 unique interactions were recorded across all platforms.
+Radio accounted for 46 percent of engagements, followed by WhatsApp (28
+percent), Facebook (17 percent), and SMS (9 percent). \## Keyword
+Frequency and Word Cloud
+
+Keywords were extracted from the call log to identify the most discussed
+cybersecurity issues. Table 2 presents the top ten keywords and their
+frequencies.
+
+Table 2: Frequency of Engagement Keywords
+
+| Word      | Frequency |
+|-----------|----------:|
+| phishing  |       120 |
+| link      |        95 |
+| password  |        85 |
+| twofactor |        60 |
+| malware   |        50 |
+| bank      |        45 |
+| update    |        40 |
+| report    |        30 |
+| free      |        28 |
+| download  |        25 |
+
+The words *phishing*, *password*, and *link* appeared most frequently,
+reflecting participants’ interest in safe browsing and online
+authentication as also visualised in @fig-pca-plot.
+
+```{r}
+#| label: fig-pca-plot
+#| fig-cap: "Word cloud displaying the frequency of audience engagement keywords related to cybersecurity topics"
+#| fig-align: center
+#| out.width: "90%"
+#| echo: false
+#| message: false
+#| warning: false
+# Load packages
+library(dplyr)
+library(wordcloud2)
+
+# Fix random seed to keep the layout constant
+set.seed(123)
+
+# Create keyword frequency data with more words
+keywords <- data.frame(
+  word = c("phishing","link","password","twofactor","malware","bank","update",
+           "report","free","download","wifi","fraud","socialmedia","account",
+           "login","antivirus","privacy","hacking","spam","firewall","vpn",
+           "backup","data","email","scam","otp","browser","identity","safe","alert"),
+  freq = c(120,95,85,60,50,45,40,30,28,25,22,20,19,18,17,16,15,15,14,13,
+           12,12,11,10,10,9,8,8,7,7)
+)
+
+# Generate stable word cloud
+wordcloud2(keywords, size = 1)
+
+
+```
+
+The resulting word cloud visually highlighted the prominence of key
+cybersecurity terms. Larger words represented higher engagement levels,
+with phishing-related queries dominating the discussion.
+
+## Evaluation Design
+
+A quasi-experimental design was used to assess the impact of the
+intervention. Two groups were compared:
+
+-   **Treatment group:** listeners within the radio broadcast coverage
+    areas.
+
+-   **Control group**: individuals from areas without access to the
+    campaign.
+
+Knowledge assessments were conducted at baseline and three months after
+the intervention. Respondents were asked ten questions covering basic
+cybersecurity practices, and scores were converted to a 0–100 scale.
+
+The differences-in-differences (DiD) approach was used to estimate the
+change in knowledge attributable to the campaign. The model took the
+form:
+
+𝑌 𝑖 𝑡 = 𝛽 0 + 𝛽 1 Treatment 𝑖 + 𝛽 2 Post 𝑡 + 𝛽 3 ( Treatment 𝑖 × Post 𝑡
+) + 𝜖 𝑖 𝑡 Y it ​
+
+where 𝑌 𝑖 𝑡 Y it ​is the knowledge score for individual 𝑖 i at time 𝑡 t,
+and 𝛽 3 β 3 ​captures the effect of the intervention.
+
+## Results
+
+A total of 400 participants were included in the treatment group and 400
+in the control group. The regression results are presented in Table 3.
+
+Table 3: Differences-in-Differences Regression Results
+
+| Variable | Coefficient | Std. Error | z | p-value | 95% CI (Lower) | 95% CI (Upper) |
+|-----------|-----------|-----------|----------:|-----------|-----------|-----------|
+| Intercept | 50.36 | 0.36 | 139.09 | 0.000 | 49.65 | 51.06 |
+| Treatment | 0.98 | 0.53 | 1.85 | 0.065 | -0.06 | 2.02 |
+| Post | 1.12 | 0.49 | 2.29 | 0.022 | 0.16 | 2.08 |
+| Treat × Post | 4.25 | 0.70 | 6.07 | 0.000 | 2.88 | 5.62 |
+
+The results show that the treatment × post-intervention interaction term
+is positive and statistically significant (p \< 0.001). Participants
+exposed to the campaign improved their cybersecurity knowledge by an
+average of 4.25 points more than those in the control group.
+
+The treatment effect at baseline (p = 0.065) indicates minor initial
+differences between groups, while the post variable (p = 0.022) suggests
+a small general improvement across both groups over time.
+
+## Interpretation
+
+The findings provide strong evidence that the radio-based BCC
+intervention improved cybersecurity knowledge. The significant treatment
+× post coefficient confirms that exposure to the campaign led to
+measurable learning gains. The modest baseline difference supports the
+comparability of the groups.
+
+A four-point improvement in knowledge represents a meaningful change
+given the short campaign period. Listeners showed greater awareness of
+phishing, password safety, and software updates. These findings were
+reinforced by engagement data, which highlighted frequent discussion of
+phishing and password topics during radio sessions and online chats.
+
+The results suggest that combining traditional media with interactive
+digital channels can enhance the effectiveness of public awareness
+campaigns. Feedback mechanisms such as WhatsApp and Facebook messages
+allowed audiences to clarify doubts and apply what they learned in real
+time.
+
+## Conclusion
+
+The behaviour change communication intervention on cybersecurity
+achieved its objective of increasing awareness among listeners. Radio
+proved to be an effective medium for disseminating digital safety
+information, while interactive channels such as WhatsApp and Facebook
+enhanced engagement and retention.
+
+The differences-in-differences analysis showed that knowledge scores
+improved significantly among those exposed to the campaign. Word cloud
+analysis of engagement data revealed that phishing and password security
+were the most prominent areas of concern.
+
+Continued reinforcement of cybersecurity messages through regular
+broadcasts, supported by digital media engagement, could help sustain
+and expand these gains. Future interventions should measure behavioural
+outcomes, such as the number of phishing reports or password updates, to
+determine whether improved awareness translates into safer online
+practices.

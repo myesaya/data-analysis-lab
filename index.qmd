@@ -1,0 +1,49 @@
+---
+title: "Welcome to Data Analysis Lab: The home of quality data analysis services"
+description: ""
+editor-options:
+format: 
+  html: 
+    toc: false
+    css: styles.css
+---
+
+::: hero-section
+# We help students get accurate and well-presented data analysis for their research projects, making it easier for their work to be accepted by their universities. {.centered-subtitle}
+
+![](images/presentation.png){.hero-image}
+
+# We envision a future where every student can complete their research confidently, supported by accurate and reliable data analysis. {.centered-subtitle}
+:::
+
+::::::::: main-content
+::: {.content-block .intro}
+We are a team of seasoned data analytics enthusiasts with tech insights who enjoy building open data science principles and pipelines. We found a passion for data science, and we code in SQL and R and create interactive shiny dashboards to help solve complex WASH challenges.
+:::
+
+::: content-block
+We are aware that students need to be taken through the data science cycle whereby their data is cleaned, visualised and analysed.
+
+To fill that gap, our team helps students by providing:
+:::
+
+:::::: services-grid
+::: service-card
+### **Data Cleaning**
+
+Preparing and validating your data for analysis with meticulous attention to detail
+:::
+
+::: service-card
+### **Data Visualisation**
+
+Creating insightful charts and interactive dashboards that tell compelling stories
+:::
+
+::: service-card
+### **Data Analysis**
+
+Applying statistical methods and data science techniques to extract meaningful insights
+:::
+::::::
+:::::::::

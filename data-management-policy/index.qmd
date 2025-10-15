@@ -1,0 +1,15 @@
+---
+  title: "Data Management Policy"
+---
+
+Proper handling of data is essential to provide reliable and secure services. This policy outlines how we organise, protect, and maintain data throughout its lifecycle. Our commitments include:
+
+-   Data is stored securely with controlled access to prevent unauthorized use.
+
+-   Regular backups are performed to prevent accidental loss.
+
+-   Data retention schedules are followed to keep information only as long as necessary.
+
+-   When data is no longer required, it is securely deleted.
+
+-   All procedures ensure data integrity, reliability, and security.

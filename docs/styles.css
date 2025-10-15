@@ -1,0 +1,233 @@
+/* styles.css */
+
+/* Maximum stretching for logo - User's original settings */
+.navbar {
+  min-height: 160px !important;
+  height: 160px !important;
+  padding: 0 !important;
+}
+
+.navbar-brand {
+  height: 170px !important;
+  padding: 0 50px !important;
+  width: auto !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.navbar-brand img {
+  height: 160px !important;
+  width: 170px !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: fill !important;
+}
+
+/* Adjust content to account for large navbar */
+body {
+  padding-top: 160px !important;
+}
+
+/* Mobile dropdown menu background color */
+.navbar-collapse {
+  background-color: #5b195b !important; /* Same as navbar background */
+  padding: 1rem;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* Ensure dropdown items are visible on mobile */
+@media (max-width: 900px) {
+  /* Fix 1: Left align email icon in mobile menu */
+  .navbar-collapse .nav-link[href^="mailto:"] {
+    justify-content: flex-start !important;
+    text-align: left !important;
+  }
+
+  /* Fix 2: Make dropdown half width instead of full */
+  .navbar-collapse {
+    width: 50% !important;
+    min-width: 50px !important;
+    max-width: 100px !important;
+    left: 0 !important;
+    right: auto !important;
+  }
+
+  .navbar-collapse .nav-link {
+    color: white !important;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar-collapse .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+  }
+
+  /* Maintain large navbar on mobile too */
+  .navbar {
+    min-height: 160px !important;
+    height: 160px !important;
+  }
+
+  .navbar-brand {
+    height: 170px !important;
+    padding: 0 20px !important;
+  }
+
+  .navbar-brand img {
+    height: 160px !important;
+    width: 170px !important;
+  }
+
+  body {
+    padding-top: 160px !important;
+  }
+
+  /* MOBILE SERVICE CARDS - STACKED WITH EQUAL SMALL SPACING */
+  .services-grid {
+    grid-template-columns: 1fr; /* Single column stack */
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .service-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 1.5rem;
+  }
+
+  /* Equal small spacing on left and right for all content */
+  .main-content {
+    padding: 0 1rem; /* Equal small spacing on left and right */
+  }
+
+  .content-block {
+    padding: 1.5rem;
+  }
+
+  .hero-section {
+    padding: 1rem 0;
+  }
+
+  .centered-title {
+    font-size: 2em;
+  }
+
+  .centered-subtitle {
+    font-size: 1.1em;
+  }
+
+  /* Mobile image adjustments */
+  .hero-image {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Hero section and content blocks */
+.hero-section {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+}
+
+/* Fix for hero image - show full height and remove alt text */
+.hero-image {
+  width: 100%;
+  height: auto; /* Show full image height */
+  max-height: none; /* Remove height restriction */
+  object-fit: contain; /* Show entire image without cropping */
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+/* Remove alt text display */
+.hero-image::after {
+  content: none !important;
+}
+
+/* Hide alt text for all images in hero section */
+.hero-section img {
+  font-size: 0;
+}
+
+/* Centered titles */
+.centered-title {
+  text-align: center;
+  margin: 1.5rem 0;
+  font-size: 2.5em;
+  color: #2c3e50;
+}
+
+.centered-subtitle {
+  text-align: center;
+  margin: 1rem 0 2rem 0;
+  font-size: 1.3em;
+  color: #5d6d7e;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.content-block {
+  margin: 2rem 0;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.content-block.intro {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* WIDE SCREEN SERVICE CARDS (900px and above) */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.service-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  border-top: 4px solid #2c3e50;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+.service-card h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.3em;
+}
+.project-link {
+    color: #5b195b;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #5b195b;
+    padding: 5px 0;
+}
+
+.project-link:hover {
+    background-color: #f0e6f0;
+    padding: 5px 10px;
+    border-radius: 3px;
+}

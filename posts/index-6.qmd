@@ -1,0 +1,102 @@
+---
+title: "Social Media Marketing and Digital Banking Adoption: A K-Means Clustering Approach"
+author: "Admin"
+format: html
+---
+
+## Background
+
+The growth of digital banking has reshaped how customers interact with financial services. Social media marketing (SMM) has become one of the most influential tools for promoting digital banking services, especially among young adults.
+
+Understanding how customer engagement on social media relates to their adoption of digital banking can help financial institutions improve outreach strategies.
+
+Machine learning, particularly K-means clustering, offers an effective way to uncover hidden patterns in customer data. This method groups individuals with similar characteristics without requiring predefined categories.
+
+## Goal
+
+To identify clusters of digital banking users based on their engagement with social media marketing activities and their level of digital banking adoption.
+
+## Methods
+
+-   Data were collected from 1000 participants through an online survey assessing:
+
+-   Frequency of social media use (1–5 scale)
+
+-   Engagement with bank advertisements (1–5 scale)
+
+-   Trust in digital banking (1–5 scale)
+
+-   Number of digital banking features used (0–10)
+
+-   Demographic data (age group, gender, education)
+
+The K-means clustering algorithm was applied to the numeric variables to group respondents into distinct behavioural clusters.
+
+K-means is an unsupervised machine learning method that minimises within-cluster variation and maximises between-cluster differences.
+
+## Results
+
+Three main clusters were identified (k = 3):
+
+| Cluster | Description | Mean Social Media Engagement | Mean Trust Score | Mean Features Used | Size (n) |
+|----|----|----|----|----|----|
+| **1** | Passive Users | 2.1 | 2.5 | 1.3 | 85 |
+| **2** | Moderate Engagers | 3.4 | 3.7 | 4.6 | 95 |
+| **3** | Active Digital Adopters | 4.6 | 4.8 | 8.9 | 70 |
+
+Cluster 1 users showed low interaction with social media marketing and limited digital banking use.\
+Cluster 2 displayed moderate engagement and moderate use of digital features.\
+Cluster 3 represented highly engaged users who actively use multiple digital banking features and express strong trust in digital banking.
+
+The graphical representation in @fig-pca-plot shows how respondents were grouped by the K-means algorithm.
+
+```{r}
+#| label: fig-pca-plot
+#| fig-cap: "Distribution of K-means clusters of digital banking users based on social media marketing engagement"
+#| fig-align: center
+#| out.width: "80%"
+#| echo: false
+#| message: false
+#| warning: false
+# Load libraries
+library(ggplot2)
+library(dplyr)
+
+# Create simulated dataset
+set.seed(123)
+n <- 250
+data <- data.frame(
+  social_media_use = runif(n, 1, 5),
+  ad_engagement = runif(n, 1, 5),
+  trust = runif(n, 1, 5),
+  features_used = rpois(n, 5)
+)
+
+# Run K-means clustering (3 clusters)
+kmeans_result <- kmeans(data[, c("social_media_use", "features_used")], centers = 3, nstart = 25)
+data$cluster <- as.factor(kmeans_result$cluster)
+
+# Plot clusters
+ggplot(data, aes(x = social_media_use, y = features_used, colour = cluster)) +
+  geom_point(size = 3, alpha = 0.7) +
+  stat_ellipse(level = 0.95, linetype = "dashed") +
+  labs(
+    title = "K-means Clusters of Digital Banking Users",
+    x = "Social Media Use (1–5 scale)",
+    y = "Number of Digital Banking Features Used"
+  ) +
+  theme_minimal()
+
+```
+
+## Interpretation
+
+The clustering shows clear differences between passive, moderate, and active users. Active digital adopters display both high social media activity and extensive use of digital banking features, suggesting that social media marketing strongly relates to digital engagement behaviour.
+
+This segmentation can guide targeted communication strategies:
+
+-   Cluster 1: awareness campaigns to build trust
+
+-   Cluster 2: nudges to deepen feature use
+
+-   Cluster 3: loyalty programmes to maintain engagement

@@ -1,0 +1,23 @@
+---
+title: Evidence from Our Past Projects
+---
+
+**Note:** All the information presented in the project has been fully anonymised. No references are made to project implementers, universities, or any sensitive names. We truly value the privacy and trust of our clients and adhere to the highest ethical standards in data collection, analysis, and reporting.
+
+Please click on each project to learn more about it.
+
+```{r}
+#| echo: false
+#| message: false
+library(readr)
+library(dplyr)
+
+readr::read_csv("projects.csv") |>
+  dplyr::select(Project) |>
+  dplyr::mutate(
+    Row_Number = row_number(),
+    Project = paste0("[", Project, "](index-", Row_Number, ".html)")  # Link to pre-rendered HTML
+  ) |>
+  dplyr::select(Project) |>
+  knitr::kable()
+```

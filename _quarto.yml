@@ -1,0 +1,55 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: ""
+  site-url: "https://m-yesaya.github.io/website/"
+  page-footer:
+    left: |
+      This website is built in R with ❤️ from [Quarto](https://quarto.org/)
+    right: |
+      Blantyre-based freelance consultants; 2025 Data Analysis Lab
+
+  navbar:
+    background: "#5b195b"
+    logo: "images/logo-4.png"
+
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Past Analysis"
+        href: posts/
+      - text: "Our Prices"
+        href: our-prices/
+      - text: "Reviews"
+        href: reviews/
+      - text: "Privacy Policy"
+        href: privacy-policy/
+      - text: "Data Management Policy"
+        href: data-management-policy/
+      - text: "Confidentiality Policy"
+        href: confidentiality-policy/
+      - text: "Ethics Policy"
+        href: ethics-policy/
+
+
+    right:
+      - icon: whatsapp
+        href: "https://wa.me/265884501024?text=Hi%20Data%20Analysis%20Lab,%20can%20you%20help%20analyse%20my%20dataset%20and%20explain%20the%20results?"
+        aria-label: "WhatsApp"
+
+  sidebar:
+    - id: data
+      title: "aaaa"
+      style: "floating"
+      collapse-level: 2
+      align: left
+      nav: data
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+

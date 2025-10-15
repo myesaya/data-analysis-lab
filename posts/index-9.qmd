@@ -1,0 +1,114 @@
+---
+title: "Estimation of Sludge Accumulation and Emptying Needs in On-Site Sanitation Systems: A Predictive Modelling Approach"
+author: "Admin"
+format: html
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+## Background
+
+Urban areas in low- and middle-income countries rely heavily on on-site
+sanitation systems such as pit latrines. As cities expand, managing
+faecal sludge becomes a key challenge for urban authorities.
+
+This study quantified sludge volumes from sampled pits and modelled the
+rates of filling and emptying needs over time. Understanding how much
+sludge accumulates each year is essential for planning collection and
+treatment capacity at city level.
+
+## Goal
+
+To estimate the yearly sludge volumes requiring emptying over an 8-year
+projection period, comparing pits of circular and rectangular shapes.
+
+## Methods
+
+Two datasets were collected in parallel:
+
+-   **Field measurements:** Sludge depth and pit dimensions were used to
+    calculate total and remaining pit volumes.
+
+-   **Household survey:** Gathered demographic data including household
+    size and toilet usage frequency.
+
+The sludge accumulation rate was modelled based on the remaining pit
+space (0.5 m below the drop hole), using literature-based estimates of
+faecal sludge generation.
+
+Yearly volumes requiring emptying were simulated for 8 years under both
+pit shapes:
+
+-   Circular pits: 𝑉 = 𝜋 𝑟 2 ℎ V=πr 2 h
+
+-   Rectangular pits: 𝑉 = 𝑙 × 𝑤 × ℎ V=l×w×h
+
+Modelled data were visualised using R's ggplot2, showing the decline in
+emptying needs as pits reach capacity (@fig-sankey)
+
+```{r}
+#| label: fig-sankey
+#| fig-cap: "Projected annual trends in sludge volume and pit emptying needs by latrine type over an eight-year period."
+#| fig-subcap: "The solid lines show the proportion of households requiring pit emptying each year, while the dashed lines represent the mean sludge volume."
+#| fig-align: center
+#| out.width: "100%"
+#| echo: false
+#| message: false
+#| warning: false
+#echo
+# Load packages
+library(ggplot2)
+library(dplyr)
+library(scales)
+
+# Dataset
+data <- data.frame(
+  Year = rep(1:8, 2),
+  LatrineType = rep(c("Circular", "Rectangular"), each = 8),
+  Volume = c(6.4, 6.0, 5.6, 5.1, 4.4, 3.55, 2.4, 1.25,
+             6.1, 5.7, 5.3, 4.8, 3.9, 3.0, 2.0, 1.1),
+  EmptyingRate = c(74, 67, 58, 45, 33, 24, 12, 5,
+                   70, 64, 56, 47, 35, 26, 15, 6)
+)
+
+# Dual-axis plot: Sludge Volume + Emptying Rate
+ggplot(data, aes(x = Year, colour = LatrineType)) +
+  geom_line(aes(y = EmptyingRate), linewidth = 1) +
+  geom_point(aes(y = EmptyingRate), size = 3) +
+  geom_line(aes(y = Volume * 12), linetype = "dashed", linewidth = 1) +
+  geom_point(aes(y = Volume * 12), shape = 1, size = 3) +
+  facet_wrap(~ LatrineType) +
+  scale_y_continuous(
+    name = "Households Requiring Emptying (%)",
+    sec.axis = sec_axis(~./12, name = "Mean Sludge Volume (m³)")
+  ) +
+  labs(
+    title = "Annual Trends in Sludge Volume and Emptying Needs",
+    x = "Year of Projection"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    axis.title.y.right = element_text(colour = "grey30"),
+    axis.title.y.left = element_text(colour = "grey30")
+  )
+
+```
+
+## Interpretation
+
+-   The dual-axis plot shows that as years progress, both sludge volume
+    and the proportion of pits requiring emptying decrease steadily.\
+    Circular pits initially produced slightly higher volumes, but the
+    difference between pit types diminished over time.
+
+-   The pattern indicates that annual emptying programmes reduce
+    long-term accumulation, allowing cities to plan realistic treatment
+    capacity.
+
+-   The decline is gradual, not abrupt, suggesting consistent
+    maintenance rather than one-time emptying.
+
+-   One key limitation is that the projections did not include future
+    population growth as estimated by the National Statistics Office,
+    which may increase total sludge volume in subsequent years.

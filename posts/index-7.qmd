@@ -1,0 +1,115 @@
+---
+title: "Study on Menstrual Hygiene Management Interventions in Three Communities of Malawi"
+author: "Admin"
+format: html
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+## Goal
+
+Visualise how menstrual hygiene materials are disposed of in three
+communities.
+
+Focus on the flow from **materials used** to **disposal methods** using
+a **Sankey diagram**.
+
+## Method
+
+-   Cross-sectional survey of 200 menstruating individuals across three
+    communities.
+
+-   Collected data on **materials used**: Pads, Cloth, Tampons, Cups,
+    Others.
+
+-   Collected data on **disposal methods**: Bins, Pits, Burning,
+    Flushing, Reuse, Composting.
+
+-   Tabulated the number of users flowing from each material to each
+    disposal method.
+
+-   Visualised flows using a **Sankey diagram** to identify dominant
+    disposal pathways.
+
+## Results
+
+Below is the Sankey diagram illustrating the flow from menstrual hygiene
+materials to disposal methods.
+
+```{r}
+#| label: fig-sankey
+#| fig-cap: "Sankey Diagram of Material Flow"
+#| fig-align: center
+#| out.width: "100%"
+#| echo: false
+#| message: false
+#| warning: false
+
+# R code for Sankey diagram
+library(networkD3)
+
+# Define nodes
+nodes <- data.frame(name = c(
+  "Pads", "Cloth", "Tampons", "Cups", "Other",
+  "Bins", "Pits", "Burning", "Flushing", "Reuse", "Composting"
+))
+
+# Define links (flows)
+links <- data.frame(
+  source = c(0,0,0,1,1,2,2,3,3,4,4),
+  target = c(5,6,7,5,10,7,8,10,9,5,6),
+  value = c(80, 30, 10, 50, 20, 15, 5, 10, 8, 5, 3)
+)
+
+# Create Sankey diagram
+sankeyNetwork(Links = links, Nodes = nodes, 
+              Source = "source", Target = "target", 
+              Value = "value", NodeID = "name",
+              fontSize = 14, nodeWidth = 30)
+```
+
+**Explanation of flows (fake data example):**
+
+-   **Pads:** 80 users dispose in bins, 30 in pits, 10 by burning.
+
+-   **Cloth:** 50 users dispose by reuse, 20 via composting.
+
+-   **Tampons:** 15 users burn, 5 flush.
+
+-   **Cups:** 10 users compost, 8 reuse.
+
+-   **Other absorbents:** 5 dispose in bins, 3 in pits.
+
+The diagram highlights the **dominant disposal routes** for each
+material.
+
+## Interpretation
+
+-   **Bins** are the primary disposal method for pads and other
+    absorbents
+
+-   **Reuse** is common for cloth and cups, suggesting a potential for
+    **hygiene education and resource efficiency**.
+
+-   Burning and flushing are minor but present, indicating
+    **environmental risks**
+
+-   Composting is rare, suggesting opportunities for **sustainable
+    disposal interventions**
+
+-   Sankey visualisation effectively shows **which materials contribute
+    most to each disposal method**, guiding intervention planning.
+
+## Conclusion
+
+-   Pads are the most commonly disposed material, primarily in bins
+
+-   Cloth and cups tend to be reused, indicating potential for education
+    on safe washing practices.
+
+-   Interventions could focus on reducing unsafe disposal (burning,
+    flushing) and promoting sustainable options (composting)
+
+-   The Sankey diagram helps stakeholders **visually understand disposal
+    flows**, informing targeted MHM interventions.

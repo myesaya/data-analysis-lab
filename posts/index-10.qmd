@@ -1,0 +1,46 @@
+---
+  title: "Study on Similarity of Microbial Communities Across Vegetables, Soil, and Fertiliser Sources"
+  author: "Admin"
+---
+
+## Goal
+
+Examine the similarity of microbial communities in three sample sources: vegetables, farm soil, and fertiliser, to understand how microbial populations overlap.
+
+## Method
+
+-   Samples collected from vegetable surfaces, adjacent soil, and fertiliser.
+
+-   Microbial communities characterised using standard laboratory methods.
+
+-   Jaccard similarity index calculated for all pairwise combinations to measure community overlap.
+
+-   Statistical significance evaluated with bootstrapped confidence intervals (95% CI) and p-values.
+
+## Results
+
+Table 1 presents the mean Jaccard Index values representing microbial similarity between vegetables, soil, and fertiliser samples. The 95% confidence intervals indicate the precision of the estimated similarity, while the p-values show the statistical significance of differences observed between source pairs. Significant associations (p \< 0.05) suggest a meaningful overlap in microbial communities between those sources.
+
+Table 1: Similarity of microbial communities across sample sources based on the Jaccard Index
+
+| Source Pair             | Mean Jaccard Index | 95% CI      | p-value  |
+|-------------------------|--------------------|-------------|----------|
+| Vegetables – Soil       | 0.42               | 0.35 – 0.49 | **0.01** |
+| Vegetables – Fertiliser | 0.31               | 0.25 – 0.38 | **0.02** |
+| Soil – Fertiliser       | 0.29               | 0.22 – 0.36 | 0.08     |
+
+## **Interpretation of Results:**
+
+-   **Vegetables – Soil:** Mean Jaccard index = 0.42 (95% CI: 0.35–0.49, **p = 0.01**) indicates a significant overlap of microbial communities between vegetables and the soil. This suggests that soil contributes substantially to the microbial populations found on vegetables.
+
+-   **Vegetables – Fertiliser:** Mean Jaccard index = 0.31 (95% CI: 0.25–0.38, **p = 0.02**) shows significant similarity, indicating that fertiliser may also be a source of microbes on vegetables, though to a lesser extent than soil.
+
+-   **Soil – Fertiliser:** Mean Jaccard index = 0.29 (95% CI: 0.22–0.36, p = 0.08) is not statistically significant, suggesting that microbial communities in soil and fertiliser are less similar and differences may be due to random variation.
+
+## Conclusion
+
+-   The microbial communities on vegetables share significant similarities with both soil and fertiliser, highlighting potential routes for microbial transfer.
+
+-   Soil appears to be the primary source, followed by fertiliser.
+
+-   Understanding these overlaps can guide interventions for microbial management in farming practices.

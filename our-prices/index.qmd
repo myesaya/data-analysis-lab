@@ -1,0 +1,110 @@
+---
+title: "Package prices"
+description: ""
+editor-options:
+  chunk_output_style: console
+  linkify: true
+execute:
+  echo: false
+  toc: true
+  warning: false
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+We will choose the package together. If you need more advanced tests
+later, we can upgrade easily..
+
+To recommend the best package for your study, I just need a few details:
+
+• Your research proposal (with names removed)\
+• Your dataset\
+• Any specific tests your supervisor requires (if known)
+
+Once you share these, I will guide you on which package fits your work
+best so you get accurate results and interpretation without paying for
+extras you do not need.
+
+## Starter Package – K70,000
+
+### For students who need only basic descriptive analysis.
+
+**Includes:**
+
+-   Data checking and cleaning
+
+-   Descriptive statistics
+
+-   Charts and tables
+
+-   Result interpretation (not writing results section)
+
+-   Free 15-minute consultation
+
+-   One free revision (within 3 days)
+
+-   Work starts after payment confirmation
+
+**Delivery:** 2–3 days
+
+**Payment:** K70,000 (on order placement)
+
+## Standard Package – K220,000
+
+### For students who need both descriptive and inferential analysis.
+
+**Includes:**
+
+-   Everything in Starter Package
+
+-   Hypothesis testing (t-test,chi-square, ANOVA, correlation, or
+    regression)
+
+-   Interpretation of test results (not writing results section) •
+
+-   Free 15-minute consultation
+
+-   Two revisions (within 5 days)
+
+-   Work starts after payment confirmation
+
+-   Guidance on how to approach discussion of results
+
+**Delivery:** 6–8 working days
+
+**Payment:** K220,000 (on order placement)
+
+## Premium Package – K300,000
+
+### For students who need full analysis with mixed study.
+
+**Includes:**
+
+-   Everything in Standard Package
+
+-   Free 15-minute consultation call
+
+-   Variable recoding and creation of composite indices
+
+-   Advanced tests (logistic regression, factor analysis, etc.)
+
+-   Guidance on how to approach discussion of results
+
+-   Unlimited revisions (within 10 days)
+
+-   Work starts after payment confirmation
+
+**Delivery**: 10–12 working days
+
+**Payment:** K300,000 (on order placement)
+
+## Points to note
+
+-   **Payment is made to account number provided when you WhatsApp
+    Admin**
+
+-   **Any work outside the package will be at an agreed cost**
+
+-   **Please note, We do not provide support for a pure qualitative
+    study**

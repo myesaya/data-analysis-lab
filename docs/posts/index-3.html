@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Admin">
+
+<title>Impact of a Behaviour Change Communication Intervention on Cybersecurity Awareness</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-5e01ffefb876976cad9260d04a894f64.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link href="../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+
+<script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+<link href="../site_libs/wordcloud2-0.0.1/wordcloud.css" rel="stylesheet">
+
+<script src="../site_libs/wordcloud2-0.0.1/wordcloud2-all.js"></script>
+
+<script src="../site_libs/wordcloud2-0.0.1/hover.js"></script>
+
+<script src="../site_libs/wordcloud2-binding-0.2.1/wordcloud2.js"></script>
+
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/logo-4.png" alt="" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../posts/"> 
+<span class="menu-text">Past analysis</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../data/"> 
+<span class="menu-text">Our prices</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../reviews/"> 
+<span class="menu-text">Reviews</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../privacy-policy/"> 
+<span class="menu-text">Privacy Policy</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../data-management-policy/"> 
+<span class="menu-text">Data Management Policy</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../confidentiality-policy/"> 
+<span class="menu-text">Confidentiality Policy</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../ethics-policy/"> 
+<span class="menu-text">Ethics Policy</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://wa.me/265884501024?text=Hi%20Data%20Analysis%20Lab,%20can%20you%20help%20analyse%20my%20dataset%20and%20explain%20the%20results?"> <i class="bi bi-whatsapp" role="img" aria-label="WhatsApp">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#description-of-the-intervention" id="toc-description-of-the-intervention" class="nav-link" data-scroll-target="#description-of-the-intervention">Description of the Intervention</a></li>
+  <li><a href="#engagement-tracking" id="toc-engagement-tracking" class="nav-link" data-scroll-target="#engagement-tracking">Engagement Tracking</a></li>
+  <li><a href="#evaluation-design" id="toc-evaluation-design" class="nav-link" data-scroll-target="#evaluation-design">Evaluation Design</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
+  <li><a href="#interpretation" id="toc-interpretation" class="nav-link" data-scroll-target="#interpretation">Interpretation</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Impact of a Behaviour Change Communication Intervention on Cybersecurity Awareness</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Admin </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Cybersecurity awareness remains a growing concern as more people rely on digital tools for financial transactions, communication, and information access. Many users lack knowledge on identifying phishing attempts, creating strong passwords, and verifying the authenticity of online content. Behaviour Change Communication (BCC) interventions that combine mass media and social engagement can play a key role in addressing these gaps.</p>
+<p>This report presents the results of a BCC intervention that used radio programmes and online engagement to promote safe cybersecurity practices. The objectives were to:</p>
+<ol type="1">
+<li><p>Assess the level of audience engagement through radio and social media interactions.</p></li>
+<li><p>Measure the change in cybersecurity knowledge following exposure to the intervention using a differences-in-differences approach.</p></li>
+</ol>
+</section>
+<section id="description-of-the-intervention" class="level2">
+<h2 class="anchored" data-anchor-id="description-of-the-intervention">Description of the Intervention</h2>
+<p>The intervention ran for three months and targeted adult listeners in selected districts. Weekly 30-minute radio call-in programmes were broadcast, focusing on topics such as detecting phishing links, setting secure passwords, updating software, and avoiding scams.</p>
+<p>Each episode encouraged listeners to ask questions by calling during live sessions or sending messages through Facebook, SMS, or WhatsApp. The radio programme was supported by:</p>
+<ul>
+<li><p>Short radio spots that repeated key messages throughout the week.</p></li>
+<li><p>Facebook posts summarising each episode.</p></li>
+<li><p>SMS and WhatsApp tips sent to subscribers after every broadcast.</p></li>
+</ul>
+<p>A call log system captured all engagements across platforms to understand audience participation and the main cybersecurity issues raised.</p>
+</section>
+<section id="engagement-tracking" class="level2">
+<h2 class="anchored" data-anchor-id="engagement-tracking">Engagement Tracking</h2>
+<p>During the campaign, all incoming calls and messages were recorded. The records captured the channel, time, and key phrases mentioned. Table 1 presents a sample of entries from the call log.</p>
+<p>Table 1: Sample of Call Log Data</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 38%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>ID</th>
+<th>Channel</th>
+<th>Timestamp</th>
+<th>Text Message</th>
+<th>Keywords</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Radio</td>
+<td>2025-09-01 09:15:00</td>
+<td>How do I know if a link is safe?</td>
+<td>link, safe, phishing</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Radio</td>
+<td>2025-09-01 09:18:30</td>
+<td>My bank asked for a PIN by SMS.</td>
+<td>bank, sms, phishing</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>WhatsApp</td>
+<td>2025-09-01 10:05:12</td>
+<td>How can I enable two-factor authentication?</td>
+<td>twofactor, password</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Facebook</td>
+<td>2025-09-01 11:02:00</td>
+<td>Is antivirus protection enough?</td>
+<td>antivirus, malware</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>SMS</td>
+<td>2025-09-01 12:00:00</td>
+<td>I received a link promising free airtime. Safe?</td>
+<td>free, link, scam</td>
+</tr>
+</tbody>
+</table>
+<p>A total of 1,280 unique interactions were recorded across all platforms. Radio accounted for 46 percent of engagements, followed by WhatsApp (28 percent), Facebook (17 percent), and SMS (9 percent). ## Keyword Frequency and Word Cloud</p>
+<p>Keywords were extracted from the call log to identify the most discussed cybersecurity issues. Table 2 presents the top ten keywords and their frequencies.</p>
+<p>Table 2: Frequency of Engagement Keywords</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Word</th>
+<th style="text-align: right;">Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>phishing</td>
+<td style="text-align: right;">120</td>
+</tr>
+<tr class="even">
+<td>link</td>
+<td style="text-align: right;">95</td>
+</tr>
+<tr class="odd">
+<td>password</td>
+<td style="text-align: right;">85</td>
+</tr>
+<tr class="even">
+<td>twofactor</td>
+<td style="text-align: right;">60</td>
+</tr>
+<tr class="odd">
+<td>malware</td>
+<td style="text-align: right;">50</td>
+</tr>
+<tr class="even">
+<td>bank</td>
+<td style="text-align: right;">45</td>
+</tr>
+<tr class="odd">
+<td>update</td>
+<td style="text-align: right;">40</td>
+</tr>
+<tr class="even">
+<td>report</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr class="odd">
+<td>free</td>
+<td style="text-align: right;">28</td>
+</tr>
+<tr class="even">
+<td>download</td>
+<td style="text-align: right;">25</td>
+</tr>
+</tbody>
+</table>
+<p>The words <em>phishing</em>, <em>password</em>, and <em>link</em> appeared most frequently, reflecting participants’ interest in safe browsing and online authentication as also visualised in <a href="#fig-pca-plot" class="quarto-xref">Figure&nbsp;1</a>.</p>
+<div class="cell" data-layout-align="center">
+<div id="fig-pca-plot" class="cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-pca-plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="wordcloud2 html-widget html-fill-item" id="htmlwidget-9eceb20dc2a931752ae4" style="width:90%;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-9eceb20dc2a931752ae4">{"x":{"word":["phishing","link","password","twofactor","malware","bank","update","report","free","download","wifi","fraud","socialmedia","account","login","antivirus","privacy","hacking","spam","firewall","vpn","backup","data","email","scam","otp","browser","identity","safe","alert"],"freq":[120,95,85,60,50,45,40,30,28,25,22,20,19,18,17,16,15,15,14,13,12,12,11,10,10,9,8,8,7,7],"fontFamily":"Segoe UI","fontWeight":"bold","color":"random-dark","minSize":0,"weightFactor":1.5,"backgroundColor":"white","gridSize":0,"minRotation":-0.7853981633974483,"maxRotation":0.7853981633974483,"shuffle":true,"rotateRatio":0.4,"shape":"circle","ellipticity":0.65,"figBase64":null,"hover":null},"evals":[],"jsHooks":{"render":[{"code":"function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }","data":null}]}}</script>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pca-plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Word cloud displaying the frequency of audience engagement keywords related to cybersecurity topics
+</figcaption>
+</figure>
+</div>
+</div>
+<p>The resulting word cloud visually highlighted the prominence of key cybersecurity terms. Larger words represented higher engagement levels, with phishing-related queries dominating the discussion.</p>
+</section>
+<section id="evaluation-design" class="level2">
+<h2 class="anchored" data-anchor-id="evaluation-design">Evaluation Design</h2>
+<p>A quasi-experimental design was used to assess the impact of the intervention. Two groups were compared:</p>
+<ul>
+<li><p><strong>Treatment group:</strong> listeners within the radio broadcast coverage areas.</p></li>
+<li><p><strong>Control group</strong>: individuals from areas without access to the campaign.</p></li>
+</ul>
+<p>Knowledge assessments were conducted at baseline and three months after the intervention. Respondents were asked ten questions covering basic cybersecurity practices, and scores were converted to a 0–100 scale.</p>
+<p>The differences-in-differences (DiD) approach was used to estimate the change in knowledge attributable to the campaign. The model took the form:</p>
+<p>𝑌 𝑖 𝑡 = 𝛽 0 + 𝛽 1 Treatment 𝑖 + 𝛽 2 Post 𝑡 + 𝛽 3 ( Treatment 𝑖 × Post 𝑡 ) + 𝜖 𝑖 𝑡 Y it ​</p>
+<p>where 𝑌 𝑖 𝑡 Y it ​is the knowledge score for individual 𝑖 i at time 𝑡 t, and 𝛽 3 β 3 ​captures the effect of the intervention.</p>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<p>A total of 400 participants were included in the treatment group and 400 in the control group. The regression results are presented in Table 3.</p>
+<p>Table 3: Differences-in-Differences Regression Results</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Coefficient</th>
+<th>Std. Error</th>
+<th style="text-align: right;">z</th>
+<th>p-value</th>
+<th>95% CI (Lower)</th>
+<th>95% CI (Upper)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Intercept</td>
+<td>50.36</td>
+<td>0.36</td>
+<td style="text-align: right;">139.09</td>
+<td>0.000</td>
+<td>49.65</td>
+<td>51.06</td>
+</tr>
+<tr class="even">
+<td>Treatment</td>
+<td>0.98</td>
+<td>0.53</td>
+<td style="text-align: right;">1.85</td>
+<td>0.065</td>
+<td>-0.06</td>
+<td>2.02</td>
+</tr>
+<tr class="odd">
+<td>Post</td>
+<td>1.12</td>
+<td>0.49</td>
+<td style="text-align: right;">2.29</td>
+<td>0.022</td>
+<td>0.16</td>
+<td>2.08</td>
+</tr>
+<tr class="even">
+<td>Treat × Post</td>
+<td>4.25</td>
+<td>0.70</td>
+<td style="text-align: right;">6.07</td>
+<td>0.000</td>
+<td>2.88</td>
+<td>5.62</td>
+</tr>
+</tbody>
+</table>
+<p>The results show that the treatment × post-intervention interaction term is positive and statistically significant (p &lt; 0.001). Participants exposed to the campaign improved their cybersecurity knowledge by an average of 4.25 points more than those in the control group.</p>
+<p>The treatment effect at baseline (p = 0.065) indicates minor initial differences between groups, while the post variable (p = 0.022) suggests a small general improvement across both groups over time.</p>
+</section>
+<section id="interpretation" class="level2">
+<h2 class="anchored" data-anchor-id="interpretation">Interpretation</h2>
+<p>The findings provide strong evidence that the radio-based BCC intervention improved cybersecurity knowledge. The significant treatment × post coefficient confirms that exposure to the campaign led to measurable learning gains. The modest baseline difference supports the comparability of the groups.</p>
+<p>A four-point improvement in knowledge represents a meaningful change given the short campaign period. Listeners showed greater awareness of phishing, password safety, and software updates. These findings were reinforced by engagement data, which highlighted frequent discussion of phishing and password topics during radio sessions and online chats.</p>
+<p>The results suggest that combining traditional media with interactive digital channels can enhance the effectiveness of public awareness campaigns. Feedback mechanisms such as WhatsApp and Facebook messages allowed audiences to clarify doubts and apply what they learned in real time.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>The behaviour change communication intervention on cybersecurity achieved its objective of increasing awareness among listeners. Radio proved to be an effective medium for disseminating digital safety information, while interactive channels such as WhatsApp and Facebook enhanced engagement and retention.</p>
+<p>The differences-in-differences analysis showed that knowledge scores improved significantly among those exposed to the campaign. Word cloud analysis of engagement data revealed that phishing and password security were the most prominent areas of concern.</p>
+<p>Continued reinforcement of cybersecurity messages through regular broadcasts, supported by digital media engagement, could help sustain and expand these gains. Future interventions should measure behavioural outcomes, such as the number of phishing reports or password updates, to determine whether improved awareness translates into safer online practices.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/m-yesaya\.github\.io\/website\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>This website is built in R with ❤️ from <a href="https://quarto.org/">Quarto</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Blantyre-based freelance consultants; 2025 Data Analysis Lab</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

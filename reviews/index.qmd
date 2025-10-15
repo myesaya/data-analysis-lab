@@ -1,0 +1,65 @@
+---
+title: "Customer Reviews"
+---
+
+## What Our Customers Say
+
+**Project Name**: Study on Infrastructure Functionality in Rural Communities\
+[View Project Analysis](../posts/index-1.qmd)\
+**Review:** Absolutely fantastic work! This project helped me understand my data clearly and made my project discussion so much easier. I’ll definitely come back for more projects and recommend your services to colleagues.\
+**Rating:** ⭐⭐⭐⭐⭐ \
+**Review by:** Anonymous Reviewer
+
+**Project Name:** Study on Goat Disease Prevalence in Three Cities of Malawi\
+[View Project Analysis](../posts/index-2.qmd)\
+**Review:** I’m so impressed! The analysis was delivered perfectly and gave me exactly the insights I needed. I trust your expertise completely and will refer anyone who needs data analysis.\
+**Rating:** ⭐⭐⭐⭐⭐\
+**Review by:** Anonymous Reviewer
+
+**Project Name:** Impact of a Behaviour Change Communication Intervention on Cybersecurity Awareness\
+[View Project Analysis](../posts/index-3.qmd)\
+**Review:** This is amazing! You’ve really helped me see the value in my project results. I’m excited to work with you again and will recommend your services to my network. You really deserve my recommendation.\
+**Rating:** ⭐⭐⭐⭐⭐\
+**Review by:** Anonymous Reviewer
+
+**Project Name:** Assessment of Antibiotic Residues and Microbial Quality Chicken\
+[View Project Analysis](../posts/index-4.qmd)\
+**Review:** I couldn’t be happier! You turned complex data into something I could easily act on. I feel confident sharing your services with anyone needing professional analysis.\
+**Rating:** ⭐⭐⭐⭐⭐\
+**Review by:** Anonymous Reviewer
+
+**Project Name:** Community Perceptions of Rainwater Harvesting in Areas Surrounding Mzuzu City, Malawi\
+[View Project Analysis](../posts/index-5.qmd)\
+**Review:** Truly exceptional work! Your analysis made me understand my community data better than I imagined. I’ll definitely return for future projects and recommend you to everyone I know.\
+**Rating:** ⭐⭐⭐⭐☆\
+**Review by:** Anonymous Reviewer
+
+**Project Name:** Social Media Marketing and Digital Banking Adoption: A K-Means Clustering Approach\
+[View Project Analysis](../posts/index-6.qmd)\
+**Review:** Excellent service! I’m blown away by how you presented the results clearly. I feel confident using your analysis to guide decisions and will refer others immediately.\
+**Rating:** ⭐⭐⭐⭐⭐\
+**Review by:** Anonymous Reviewer
+
+**Project Name:** Study on Menstrual Hygiene Management Interventions in Three Communities of Malawi\
+[View Project Analysis](../posts/index-7.qmd)\
+**Review:** I’m extremely satisfied! Your work is thorough and easy to understand. I will continue using your services for all my projects and recommend you without hesitation.\
+**Rating:** ⭐⭐⭐⭐⭐\
+**Review by:** Anonymous Reviewer
+
+**Project Name:** Study on Solid Waste Burning in Three Communities\
+[View Project Analysis](../posts/index-8qmd)\
+**Review:** Really happy with the results! You’ve made the whole analysis process stress-free. I’ll definitely work with you again and refer your services to others.\
+**Rating:** ⭐⭐⭐⭐☆ \
+**Review by:** Anonymous Reviewer
+
+**Project Name:** Estimation of Sludge Accumulation and Emptying Needs in On-Site Sanitation Systems: A Predictive Modelling Approach\
+[View Project Analysis](../posts/index-9.qmd)\
+**Review:** Incredible work! You’ve exceeded my expectations. Your analysis gives me complete confidence, and I’ll gladly refer anyone needing top-quality data support.\
+**Rating:** ⭐⭐⭐⭐⭐\
+**Review by:** Anonymous Reviewer
+
+**Project Name:** Study on Similarity of Microbial Communities Across Vegetables, Soil, and Fertiliser Sources\
+[View Project Analysis](../posts/index-10.qmd)\
+**Review:** You’re the best! The project was delivered perfectly and really helped me understand my data. I’ll keep coming back and referring your services to everyone in need of analysis.\
+**Rating:** ⭐⭐⭐⭐☆\
+**Review by:** Anonymous Reviewer

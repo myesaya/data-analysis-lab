@@ -1,0 +1,15 @@
+---
+title: "Privacy Policy"
+---
+
+We take privacy seriously and ensure that all personal and sensitive information is handled responsibly. This policy explains how we collect, use, and protect data in a way that is clear and transparent for our clients. Our commitments include:
+
+-   We only request for data that is necessary for providing our services.
+
+-   Personal or sensitive information is never shared with third parties without your consent.
+
+-   Data is stored securely using strong technical measures.
+
+-   Clients have full control over their information and can request access, updates, or deletion at any time.
+
+-   Our practices comply with all relevant privacy laws to ensure your rights are protected.

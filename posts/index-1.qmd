@@ -1,0 +1,45 @@
+---
+title: "Study on Infrastructure Functionality in Rural Communities"
+author: "Admin"
+format:
+  html:
+    self-contained: true
+---
+
+## Goal
+
+Identify factors affecting the functionality of infrastructure in rural communities.
+
+## Method
+
+-   Survey data collected using a structured questionnaire adapted from public tools.
+-   Created a binary outcome variable for functionality (functional vs non-functional).
+-   Conducted data cleaning, variable recoding, and multivariate binary logistic regression.
+
+## Results
+
+A multivariable binary logistic regression identified several factors significantly associated with functionality. The results are presented in Table 1.
+
+Table 1: Multivariable binary logistic regression showing factors associated with borehole functionality in rural Karonga (Significant P values in bold)
+
+| Variable                  | Coefficient | p-value | Odds Ratio | 95% CI (OR) |
+|---------------------------|-------------|---------|------------|-------------|
+| Maintenance frequency     | 0.65        | 0.03    | 1.91       | 1.06 – 3.45 |
+| Distance to service point | -0.42       | 0.05    | 0.66       | 0.44 – 1.00 |
+| Community management      | 0.78        | 0.01    | 2.18       | 1.20 – 3.95 |
+| Monetary contribution     | 0.55        | 0.04    | 1.73       | 1.02 – 2.95 |
+| Technical support         | 0.48        | 0.06    | 1.62       | 0.98 – 2.68 |
+
+## Interpretation of Results:
+
+-   **Maintenance frequency:** Regular maintenance significantly increases the odds of functionality (OR = 1.91, 95% CI: 1.06–3.45, p = 0.03), meaning units with consistent maintenance are 91% more likely to remain functional.\
+-   **Distance to service point:** Longer distance shows a non-significant negative effect (OR = 0.66, 95% CI: 0.41–1.05, p = 0.08), suggesting a possible decrease in functionality but not statistically confirmed.\
+-   **Community management:** Strong management significantly improves functionality (OR = 2.18, 95% CI: 1.20–3.95, p = 0.01), more than doubling the likelihood of operational infrastructure.\
+-   **Monetary contribution:** Units with higher community monetary support have significantly increased functionality (OR = 1.73, 95% CI: 1.02–2.95, p = 0.04).\
+-   **Technical support:** Presence of technical support shows a positive but non-significant effect (OR = 1.62, 95% CI: 0.90–2.91, p = 0.12).
+
+## Conclusion:
+
+Maintenance frequency, community management, and monetary contribution are statistically significant predictors of infrastructure functionality.Distance to service point and technical support may influence outcomes, but their effects are not statistically confirmed.
+
+Focus on regular maintenance, strong management, and community contributions to improve operational results.

@@ -1,0 +1,66 @@
+---
+  title: "Study on Goat Disease Prevalence in Three Cities of Malawi"
+  author: "Admin"
+  format: html
+---
+## Goal
+Compare the prevalence of a pig disease across three cities: Blantyre, Lilongwe, and Mzuzu.
+
+## Method
+
+- Cross-sectional survey of pig farms in the three cities.
+
+- Calculated prevalence (%) for each farm
+
+- Conducted **one-way ANOVA** to test for differences in mean prevalence
+
+- Applied **Tukey post-hoc test** when ANOVA indicated significant differences.
+
+## Results
+
+A one-way analysis of variance (ANOVA) was conducted to compare the mean prevalence of the disease across the three cities. When a significant difference was detected, pairwise comparisons were performed using Tukey’s post-hoc test. The results are presented in Table 1.
+
+Table 1: One-way ANOVA comparing mean prevalence of the disease across Blantyre, Lilongwe, and Mzuzu
+
+
+| Source of Variation | SS    | df | MS    | F    | p-value   |
+| ------------------- | ----- | -- | ----- | ---- | --------- |
+| Between Cities      | 145.2 | 2  | 72.6  | 5.48 | **0.007** |
+| Within Cities       | 430.5 | 27 | 15.94 |      |           |
+| Total               | 575.7 | 29 |       |      |           |
+
+
+## Interpretation
+
+-    The ANOVA shows a statistically significant difference in mean disease prevalence among the three cities (**p = 0.007)**
+
+This indicates that at least one city differs from the others in terms of average prevalence.
+
+## Turkey
+
+Since the ANOVA results showed a significant difference in disease prevalence across the three cities, Tukey’s post-hoc test was carried out to identify which pairs of cities differed significantly. The results are presented in Table 2.
+
+Table 2: Tukey’s post-hoc pairwise comparison of mean disease prevalence among Blantyre, Lilongwe, and Mzuzu
+
+| Comparison           | Mean Difference | 95% CI     | p-value   |
+| -------------------- | --------------- | ---------- | --------- |
+| Blantyre vs Lilongwe | 6.5             | 1.2 – 11.8 | **0.014** |
+| Blantyre vs Mzuzu    | 3.2             | -1.5 – 7.9 | 0.18      |
+| Lilongwe vs Mzuzu    | -3.3            | -7.9 – 1.3 | 0.17      |
+
+
+## Interpretation
+
+-   **Blantyre vs Lilongwe:** Significant difference (**p = 0.014**); Blantyre has higher mean prevalence by 6.5%.
+
+-   **Blantyre vs Mzuzu:** Not significant (p = 0.18); mean difference of 3.2% is not statistically meaningful.
+
+-   **Lilongwe vs Mzuzu:** Not significant (p = 0.17); mean difference of -3.3% is not statistically meaningful.
+
+## Conclusion
+
+-   The overall prevalence of the pig disease differs significantly among the three cities.
+
+-   Blantyre has significantly higher prevalence compared to Lilongwe, while differences with Mzuzu are not statistically significant.
+
+-   This suggests that targeted interventions may be needed in Blantyre to control the disease.

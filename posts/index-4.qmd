@@ -1,0 +1,84 @@
+---
+title: "Assessment of Antibiotic Residues and Microbial Quality Chicken"
+author: "Admin"
+format: html
+---
+
+## Background
+
+Antibiotics are frequently used in poultry production to prevent disease and enhance growth. Poor handling of poultry products can lead to contamination and the presence of antibiotic residues in meat.
+
+## Goal
+
+The purpose of this study was to examine microbial contamination and antibiotic residues in chicken samples collected from three markets, labelled A, B, and C.
+
+## Method
+
+Fifteen samples (five from each market) were transported at 4 °C to the microbiology laboratory. The samples were tested for Escherichia coli, Salmonella spp., and Staphylococcus aureus. All 15 samples were positive for E. coli, while Salmonella and Staphylococcus were not detected.
+
+## Antibiotic Residue Analysis
+
+Another set of analyses focused on quantifying four antibiotics: Amoxicillin, Sulfamethoxazole, Ciprofloxacin, and Trimethoprim using HPLC. Method validation followed standard analytical guidelines for precision and accuracy.
+
+## Principal Component Analysis
+
+To explore relationships among antibiotic residues, a Principal Component Analysis (PCA) was performed. The PCA revealed that Amoxicillin contributed most to the first component, while Ciprofloxacin and Trimethoprim had higher loadings on the second component, indicating differences in residue behaviour across markets.
+
+The results are presented in @fig-pca-plot
+
+```{r}
+#| label: fig-pca-plot
+#| fig-cap: "PCA Variable Correlation Plot"
+#| fig-align: center
+#| out.width: "90%"
+#| echo: false
+#| message: false
+#| warning: false
+
+# Load libraries
+library(ggplot2)
+library(factoextra)
+
+# Create example dataset (anonymised values)
+set.seed(123)
+data <- data.frame(
+  Amoxicillin = rnorm(15, mean = 70, sd = 10),
+  Sulfamethoxazole = rnorm(15, mean = 25, sd = 5),
+  Ciprofloxacin = rnorm(15, mean = 18, sd = 4),
+  Trimethoprim = rnorm(15, mean = 12, sd = 3)
+)
+
+# Perform PCA
+pca_result <- prcomp(data, scale. = TRUE)
+
+# Visualise PCA variable correlation plot
+fviz_pca_var(
+  pca_result,
+  col.var = "contrib",
+  gradient.cols = c("skyblue", "orange", "red"),
+  repel = TRUE
+)
+```
+
+## Comparison of Residue Levels Before and After Cooking
+
+To test whether cooking reduced antibiotic residues, samples from each market were analysed before and after heat treatment.
+
+Table 1. Mean antibiotic residue concentrations (µg/kg) before and after cooking in chicken samples from three anonymised markets
+
+| Antibiotic | Mean Before | Mean After | Mean Difference | 95% CI of Difference | p-value |
+|----|----|----|----|----|----|
+| Amoxicillin | 76.5 | 38.2 | 38.3 | 25.6 – 51.0 | **0.002** |
+| Sulfamethoxazole | 24.3 | 19.8 | 4.5 | 0.9 – 8.1 | **0.04** |
+| Ciprofloxacin | 16.7 | 14.5 | 2.2 | –0.7 – 5.0 | 0.18 |
+| Trimethoprim | 10.2 | 9.6 | 0.6 | –1.4 – 2.7 | 0.47 |
+
+*Significant p-values in bold*
+
+## Interpretation
+
+Cooking significantly reduced levels of amoxicillin and sulfamethoxazole, as indicated by p-values below 0.05. The changes in ciprofloxacin and trimethoprim concentrations were not statistically significant. These results suggest that while cooking helps lower antibiotic residues, it may not eliminate them completely.
+
+## Conclusion
+
+Findings indicate that poultry products sold in the three markets contained measurable antibiotic residues and microbial contamination. The results highlight the need for better awareness on safe antibiotic use and handling of poultry products.
