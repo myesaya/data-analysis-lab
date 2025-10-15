@@ -45,13 +45,16 @@ body {
   }
 
   /* Fix 2: Make dropdown half width instead of full */
+ @media (max-width: 900px) {
+  /* Fix 2: Make dropdown half width instead of full */
   .navbar-collapse {
     width: 90% !important;
     min-width: 50px !important;
-    max-width: 100px !important;
+    max-width: 50% !important;    /* ← CHANGE 100px to 50% */
     left: 0 !important;
     right: auto !important;
   }
+}
 
   .navbar-collapse .nav-link {
     color: white !important;
