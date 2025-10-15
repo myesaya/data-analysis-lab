@@ -46,7 +46,7 @@ body {
 
   /* Fix 2: Make dropdown half width instead of full */
   .navbar-collapse {
-    width: 50% !important;
+    width: 90% !important;
     min-width: 50px !important;
     max-width: 100px !important;
     left: 0 !important;

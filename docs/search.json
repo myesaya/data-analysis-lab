@@ -18,7 +18,7 @@
     "href": "posts/index.html",
     "title": "Evidence from Our Past Projects",
     "section": "",
-    "text": "Note: All the information presented in the project has beesubtitle: Here, we share a list of past projects and initiatives we’ve worked on.n fully anonymised. No references are made to project implementers, universities, or any sensitive names. We truly value the privacy and trust of our participants and adhere to the highest ethical standards in data collection, analysis, and reporting.\nPlease click on each project to learn more about it.\n\n\n\n\n\nProject\n\n\n\n\nStudy on Infrastructure Functionality in Rural Communities\n\n\nStudy on Goat Disease Prevalence in Three Cities of Malawi\n\n\nBehaviour change and communication\n\n\nAntimicrobial Resistance\n\n\nWater resilience\n\n\nSocial media influence on digital banking\n\n\nMenstual Hygiene Management Interventions\n\n\nSolid waste burning\n\n\nModelling of Sludge quantities in Onsite Sanitation\n\n\nRelationships of microbial communities in Farms\n\n\nStill births\n\n\nKAP on Waste Management in Health facilities\n\n\nDevelopment of Business Model Around SWM\n\n\nPhysico-chemical characteristics of WWTP effluent\n\n\nChicken parts and microbes\n\n\nKAP on Waste Management in Health facilities"
+    "text": "Note: All the information presented in the project has been fully anonymised. No references are made to project implementers, universities, or any sensitive names. We truly value the privacy and trust of our clients and adhere to the highest ethical standards in data collection, analysis, and reporting.\nPlease click on each project to learn more about it.\n\n\n\n\n\nProject\n\n\n\n\nStudy on Infrastructure Functionality in Rural Communities\n\n\nStudy on Goat Disease Prevalence in Three Cities of Malawi\n\n\nBehaviour change and communication\n\n\nAntimicrobial Resistance\n\n\nWater resilience\n\n\nSocial media influence on digital banking\n\n\nMenstual Hygiene Management Interventions\n\n\nSolid waste burning\n\n\nModelling of Sludge quantities in Onsite Sanitation\n\n\nRelationships of microbial communities in Farms\n\n\nStill births\n\n\nKAP on Waste Management in Health facilities\n\n\nDevelopment of Business Model Around SWM\n\n\nPhysico-chemical characteristics of WWTP effluent\n\n\nChicken parts and microbes\n\n\nKAP on Waste Management in Health facilities"
   },
   {
     "objectID": "posts/index-8.html",
@@ -259,57 +259,36 @@
     "text": "Conclusion:\nMaintenance frequency, community management, and monetary contribution are statistically significant predictors of infrastructure functionality.Distance to service point and technical support may influence outcomes, but their effects are not statistically confirmed.\nFocus on regular maintenance, strong management, and community contributions to improve operational results."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to Data Analysis Lab: The home of quality data analysis services",
-    "section": "",
-    "text": "We help students get accurate and well-presented data analysis for their research projects, making it easier for their work to be accepted by their universities.\n\n\n\nWe envision a future where every student can complete their research confidently, supported by accurate and reliable data analysis.\n\n\n\n\nWe are a team of seasoned data analytics enthusiasts with tech insights who enjoy building open data science principles and pipelines. We found a passion for data science, and we code in SQL and R and create interactive shiny dashboards to help solve complex WASH challenges.\n\n\nWe are aware that students need to be taken through the data science cycle whereby their data is cleaned, visualised and analysed.\nTo fill that gap, our team helps students by providing:\n\n\n\nData Cleaning\nPreparing and validating your data for analysis with meticulous attention to detail\n\n\nData Visualisation\nCreating insightful charts and interactive dashboards that tell compelling stories\n\n\nData Analysis\nApplying statistical methods and data science techniques to extract meaningful insights"
-  },
-  {
-    "objectID": "data-management-policy/index.html",
-    "href": "data-management-policy/index.html",
-    "title": "Data Management Policy",
-    "section": "",
-    "text": "Proper handling of data is essential to provide reliable and secure services. This policy outlines how we organise, protect, and maintain data throughout its lifecycle. Our commitments include:\n\nData is stored securely with controlled access to prevent unauthorized use.\nRegular backups are performed to prevent accidental loss.\nData retention schedules are followed to keep information only as long as necessary.\nWhen data is no longer required, it is securely deleted.\nAll procedures ensure data integrity, reliability, and security."
-  },
-  {
-    "objectID": "confidentiality-policy/index.html",
-    "href": "confidentiality-policy/index.html",
-    "title": "Confidentiality Policy",
-    "section": "",
-    "text": "We protect all information shared with us. Our approach ensures:\n\nNo other persone can access your sensitive data.\nNo confidential information is disclosed externally without permission.\nStaff are trained to handle confidential information responsibly.\nClients can share information knowing it will remain private.\nMaintaining confidentiality builds trust and supports strong relationships."
-  },
-  {
-    "objectID": "data/index.html",
-    "href": "data/index.html",
+    "objectID": "our-prices/index.html",
+    "href": "our-prices/index.html",
     "title": "Package prices",
     "section": "",
     "text": "We will choose the package together. If you need more advanced tests later, we can upgrade easily..\nTo recommend the best package for your study, I just need a few details:\n• Your research proposal (with names removed)\n• Your dataset\n• Any specific tests your supervisor requires (if known)\nOnce you share these, I will guide you on which package fits your work best so you get accurate results and interpretation without paying for extras you do not need."
   },
   {
-    "objectID": "data/index.html#starter-package-k70000",
-    "href": "data/index.html#starter-package-k70000",
+    "objectID": "our-prices/index.html#starter-package-k70000",
+    "href": "our-prices/index.html#starter-package-k70000",
     "title": "Package prices",
     "section": "Starter Package – K70,000",
     "text": "Starter Package – K70,000\n\nFor students who need only basic descriptive analysis.\nIncludes:\n\nData checking and cleaning\nDescriptive statistics\nCharts and tables\nResult interpretation (not writing results section)\nFree 15-minute consultation\nOne free revision (within 3 days)\nWork starts after payment confirmation\n\nDelivery: 2–3 days\nPayment: K70,000 (on order placement)"
   },
   {
-    "objectID": "data/index.html#standard-package-k220000",
-    "href": "data/index.html#standard-package-k220000",
+    "objectID": "our-prices/index.html#standard-package-k220000",
+    "href": "our-prices/index.html#standard-package-k220000",
     "title": "Package prices",
     "section": "Standard Package – K220,000",
     "text": "Standard Package – K220,000\n\nFor students who need both descriptive and inferential analysis.\nIncludes:\n\nEverything in Starter Package\nHypothesis testing (t-test,chi-square, ANOVA, correlation, or regression)\nInterpretation of test results (not writing results section) •\nFree 15-minute consultation\nTwo revisions (within 5 days)\nWork starts after payment confirmation\nGuidance on how to approach discussion of results\n\nDelivery: 6–8 working days\nPayment: K220,000 (on order placement)"
   },
   {
-    "objectID": "data/index.html#premium-package-k300000",
-    "href": "data/index.html#premium-package-k300000",
+    "objectID": "our-prices/index.html#premium-package-k300000",
+    "href": "our-prices/index.html#premium-package-k300000",
     "title": "Package prices",
     "section": "Premium Package – K300,000",
     "text": "Premium Package – K300,000\n\nFor students who need full analysis with mixed study.\nIncludes:\n\nEverything in Standard Package\nFree 15-minute consultation call\nVariable recoding and creation of composite indices\nAdvanced tests (logistic regression, factor analysis, etc.)\nGuidance on how to approach discussion of results\nUnlimited revisions (within 10 days)\nWork starts after payment confirmation\n\nDelivery: 10–12 working days\nPayment: K300,000 (on order placement)"
   },
   {
-    "objectID": "data/index.html#points-to-note",
-    "href": "data/index.html#points-to-note",
+    "objectID": "our-prices/index.html#points-to-note",
+    "href": "our-prices/index.html#points-to-note",
     "title": "Package prices",
     "section": "Points to note",
     "text": "Points to note\n\nPayment is made to account number provided when you WhatsApp Admin\nAny work outside the package will be at an agreed cost\nPlease note, We do not provide support for a pure qualitative study"
@@ -320,6 +299,27 @@
     "title": "Ethics Policy",
     "section": "",
     "text": "Ethical conduct is central to all our activities. This policy explains our commitment to honesty, integrity, and responsibility in every service we provide.\nKey Issues include\n\nAll work is carried out transparently and responsibly.\nInformed consent is obtained where applicable before collecting any data.\nConflicts of interest are identified and managed proactively.\nAll analyses, reports, and client interactions follow professional and ethical standards.\nThis ensures clients can trust the accuracy, fairness, and integrity of our services."
+  },
+  {
+    "objectID": "confidentiality-policy/index.html",
+    "href": "confidentiality-policy/index.html",
+    "title": "Confidentiality Policy",
+    "section": "",
+    "text": "We protect all information shared with us. Our approach ensures:\n\nNo other persone can access your sensitive data.\nNo confidential information is disclosed externally without permission.\nStaff are trained to handle confidential information responsibly.\nClients can share information knowing it will remain private.\nMaintaining confidentiality builds trust and supports strong relationships."
+  },
+  {
+    "objectID": "data-management-policy/index.html",
+    "href": "data-management-policy/index.html",
+    "title": "Data Management Policy",
+    "section": "",
+    "text": "Proper handling of data is essential to provide reliable and secure services. This policy outlines how we organise, protect, and maintain data throughout its lifecycle. Our commitments include:\n\nData is stored securely with controlled access to prevent unauthorized use.\nRegular backups are performed to prevent accidental loss.\nData retention schedules are followed to keep information only as long as necessary.\nWhen data is no longer required, it is securely deleted.\nAll procedures ensure data integrity, reliability, and security."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to Data Analysis Lab: The home of quality data analysis services",
+    "section": "",
+    "text": "We help students get accurate and well-presented data analysis for their research projects, making it easier for their work to be accepted by their universities.\n\n\n\nWe envision a future where every student can complete their research confidently, supported by accurate and reliable data analysis.\n\n\n\n\nWe are a team of seasoned data analytics enthusiasts with tech insights who enjoy building open data science principles and pipelines. We found a passion for data science, and we code in SQL and R and create interactive shiny dashboards to help solve complex WASH challenges.\n\n\nWe are aware that students need to be taken through the data science cycle whereby their data is cleaned, visualised and analysed.\nTo fill that gap, our team helps students by providing:\n\n\n\nData Cleaning\nPreparing and validating your data for analysis with meticulous attention to detail\n\n\nData Visualisation\nCreating insightful charts and interactive dashboards that tell compelling stories\n\n\nData Analysis\nApplying statistical methods and data science techniques to extract meaningful insights"
   },
   {
     "objectID": "posts/2023-10-24-research-project/index.html",

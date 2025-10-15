@@ -1,1 +1,1 @@
-Sitemap: https://m-yesaya.github.io/website/sitemap.xml
+Sitemap: https://myesaya.github.io/data-analysis-lab/sitemap.xml
