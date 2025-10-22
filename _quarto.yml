@@ -3,11 +3,11 @@ project:
   output-dir: docs
 
 website:
-  title: ""
+  title: "Data Analysis Lab"
   site-url: "https://myesaya.github.io/data-analysis-lab/"
   page-footer:
     left: |
-      This website is built in R with ❤️ from [Quarto](https://quarto.org/)
+      This website is built in R with ❤️ using [Quarto](https://quarto.org/)
     right: |
       Blantyre-based freelance consultants; 2025 Data Analysis Lab
 
@@ -37,14 +37,9 @@ website:
       - icon: whatsapp
         href: "https://wa.me/265884501024?text=Hi%20Data%20Analysis%20Lab,%20can%20you%20help%20analyse%20my%20dataset%20and%20explain%20the%20results?"
         aria-label: "WhatsApp"
-
-  sidebar:
-    - id: data
-      title: "aaaa"
-      style: "floating"
-      collapse-level: 2
-      align: left
-      nav: data
+      - icon: facebook
+        href: "https://web.facebook.com/profile.php?id=61582011403171"
+        aria-label: "Facebook"
 
 format:
   html:
