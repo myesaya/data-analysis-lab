@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Data Analysis Lab"
+  title: ""
   site-url: "https://myesaya.github.io/data-analysis-lab/"
   page-footer:
     left: |
@@ -20,7 +20,7 @@ website:
         href: index.qmd
       - text: "Past Analysis"
         href: posts/
-      - text: "Our Prices"
+      - text: "Our prices"
         href: our-prices/
       - text: "Reviews"
         href: reviews/
@@ -28,7 +28,7 @@ website:
         href: privacy-policy/
       - text: "Data Policy"
         href: data-management-policy/
-      - text: "Confidential Policy"
+      - text: "Confidentiality Policy"
         href: confidentiality-policy/
       - text: "Ethics Policy"
         href: ethics-policy/
@@ -40,6 +40,14 @@ website:
       - icon: facebook
         href: "https://web.facebook.com/profile.php?id=61582011403171"
         aria-label: "Facebook"
+
+sidebar:
+  - id: data
+    title: "aaaa"
+    style: "floating"
+    collapse-level: 2
+    align: left
+    nav: data
 
 format:
   html:

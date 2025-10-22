@@ -101,10 +101,11 @@ extras you do not need.
 
 ## Points to note
 
--   **Payment is made to account number provided when you WhatsApp
-    Admin**
+-   Days start counting from the following day if payment is made in the
+    afternoon.
 
--   **Any work outside the package will be at an agreed cost**
+-   Payment is made to account number provided when you WhatsApp Admin
 
--   **Please note, We do not provide support for a pure qualitative
-    study**
+-   Any work outside the package will be at an agreed cost
+
+-   Please note, We do not provide support for a pure qualitative study
