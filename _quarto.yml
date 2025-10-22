@@ -33,7 +33,6 @@ website:
       - text: "Ethics Policy"
         href: ethics-policy/
 
-
     right:
       - icon: whatsapp
         href: "https://wa.me/265884501024?text=Hi%20Data%20Analysis%20Lab,%20can%20you%20help%20analyse%20my%20dataset%20and%20explain%20the%20results?"
@@ -50,6 +49,6 @@ website:
 format:
   html:
     theme: cosmo
-    css: styles.css?v=2  # ← Add ?v=2 (change number when you update)
+    css: styles.css?v=2
     toc: true
-
+    include-in-header: ga4.html
