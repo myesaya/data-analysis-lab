@@ -18,7 +18,8 @@ format:
 
 ::::::::: main-content
 ::: {.content-block .intro}
-We are a team of seasoned data analytics enthusiasts with tech insights who enjoy building open data science principles and pipelines. We found a passion for data science, and we code in SQL and R and create interactive shiny dashboards to help solve complex WASH challenges.
+We are a team of data analysis experts who turn complex data into clear, actionable insights using the power of R statistical software.
+
 :::
 
 ::: content-block
