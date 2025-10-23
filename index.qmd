@@ -24,7 +24,7 @@ We envision a future where every student can complete their research confidently
 ::: content-block
 We are aware that students need to be taken through the data science cycle whereby their data is cleaned, visualised and analysed.
 
-To fill that gap, our team helps students by providing:
+To fill that gap, our team helps students by providing the following:
 :::
 
 :::::: services-grid
