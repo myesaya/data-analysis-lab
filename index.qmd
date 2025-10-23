@@ -11,7 +11,7 @@ format:
 ::: hero-section
 # We are a team of data analysis experts who turn complex data into clear, actionable insights using the power of R statistical software. 
 ![](images/presentation.png){.hero-image}
-# We help students get accurate and well-presented data analysis for their research projects, making it easier for their work to be accepted by their universities. {.centered-subtitle}
+#We help students get accurate and well-presented data analysis for their research projects, making it easier for their work to be accepted by their universities. {.centered-subtitle}
 
 :::
 
