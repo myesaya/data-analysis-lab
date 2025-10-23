@@ -7,7 +7,7 @@ website:
   site-url: "https://myesaya.github.io/data-analysis-lab/"
   page-footer:
     right: |
-      Blantyre-based freelance consultants; 2025 Data Analysis Lab
+      @ Blantyre-based freelance consultants; 2025 Data Analysis Lab
 
   navbar:
     background: "#5b195b"
