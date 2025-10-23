@@ -291,7 +291,7 @@
     "href": "our-prices/index.html#points-to-note",
     "title": "Package prices",
     "section": "Points to note",
-    "text": "Points to note\n\nPayment is made to account number provided when you WhatsApp Admin\nAny work outside the package will be at an agreed cost\nPlease note, We do not provide support for a pure qualitative study"
+    "text": "Points to note\n\nDays start counting from the following day if payment is made in the afternoon.\nPayment is made to account number provided when you WhatsApp Admin\nAny work outside the package will be at an agreed cost\nPlease note, We do not provide support for a pure qualitative study"
   },
   {
     "objectID": "ethics-policy/index.html",
@@ -317,9 +317,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Welcome to Data Analysis Lab: The home of quality data analysis services",
+    "title": "Data Analysis Lab: Delivering Quality Data Analysis Services",
     "section": "",
-    "text": "We help students get accurate and well-presented data analysis for their research projects, making it easier for their work to be accepted by their universities.\n\n\n\nWe envision a future where every student can complete their research confidently, supported by accurate and reliable data analysis.\n\n\n\n\nWe are a team of seasoned data analytics enthusiasts with tech insights who enjoy building open data science principles and pipelines. We found a passion for data science, and we code in SQL and R and create interactive shiny dashboards to help solve complex WASH challenges.\n\n\nWe are aware that students need to be taken through the data science cycle whereby their data is cleaned, visualised and analysed.\nTo fill that gap, our team helps students by providing:\n\n\n\nData Cleaning\nPreparing and validating your data for analysis with meticulous attention to detail\n\n\nData Visualisation\nCreating insightful charts and interactive dashboards that tell compelling stories\n\n\nData Analysis\nApplying statistical methods and data science techniques to extract meaningful insights"
+    "text": "We are a team of data analysis experts who turn complex data into clear, actionable insights using the power of R statistical software.\n # We help students get accurate and well-presented data analysis for their research projects, making it easier for their work to be accepted by their universities. {.centered-subtitle}\n\n\n\nWe envision a future where every student can complete their research confidently, supported by accurate and reliable data analysis.\n\n\nWe are aware that students need to be taken through the data science cycle whereby their data is cleaned, visualised and analysed.\nTo fill that gap, our team helps students by providing:\n\n\n\nData Cleaning\nPreparing and validating your data for analysis with meticulous attention to detail\n\n\nData Visualisation\nCreating insightful charts and interactive dashboards that tell compelling stories\n\n\nData Analysis\nApplying statistical methods and data science techniques to extract meaningful insights"
   },
   {
     "objectID": "posts/2023-10-24-research-project/index.html",
