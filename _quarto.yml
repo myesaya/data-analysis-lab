@@ -6,8 +6,10 @@ website:
   title: ""
   site-url: "https://myesaya.github.io/data-analysis-lab/"
   page-footer:
+    left: |
+      This website is built in R with ❤️ using [Quarto](https://quarto.org/)
     right: |
-      @ Blantyre-based freelance consultants; 2025 Data Analysis Lab
+     @Blantyre-based freelance consultants; 2025 Data Analysis Lab
 
   navbar:
     background: "#5b195b"
