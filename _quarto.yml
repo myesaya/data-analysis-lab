@@ -23,15 +23,10 @@ website:
       - text: "Our prices"
         href: our-prices/
       - text: "Reviews"
-        href: reviews/
-      - text: "Privacy Policy"
+        href: reviews
+      - text: "Our Commitment"
         href: privacy-policy/
-      - text: "Data Policy"
-        href: data-management-policy/
-      - text: "Confidentiality Policy"
-        href: confidentiality-policy/
-      - text: "Ethics Policy"
-        href: ethics-policy/
+
 
     right:
       - icon: whatsapp
